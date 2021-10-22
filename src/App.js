@@ -1,42 +1,28 @@
-import { Container } from '@mui/material';
-import './App.css';
-import Grid from '@mui/material/Grid';
-import Profile from './components/Profile'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Portfolio from './pages/Portfolio'
-import Resume from './pages/Resume'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-
-function App() {  
-  return (
-    
-    <Container>
-      <Grid container>
-        <Grid item style={{ backgroundColor: 'lightgrey'}}lg={3} md={4} sm={12} xs={12}>
-          The profile grid
-          <Profile />
-        </Grid>
-        <Grid item xs style={{ backgroundColor: 'lightblue' }}>
-           The Main grid
-          <Header />
-
-          <Router>
-            <Switch>
-                <Route path='/portfolio'>
-                <Portfolio />
-                </Route>
-
-                <Route path='/'>
-                <Resume />
-                </Route>
-            </Switch>
-          </Router>
-          <Footer />
-          </Grid>
-      </Grid>
-    </Container>
-  );
+import React, { Component } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Resume from './components/Resume';
+import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Testimonials from  './components/Testimonials';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import resumeData from './resumeData';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header resumeData={resumeData}/>
+        <About resumeData={resumeData}/>
+        <Testimonials resumeData={resumeData} />
+        {/* <Skills resumeData={resumeData}/> */}
+        <Resume resumeData={resumeData}/>
+        {/* <Portfolio resumeData={resumeData}/> */}
+        <ContactUs resumeData={resumeData}/>
+        <Footer resumeData={resumeData}/>
+      </div>
+    );
+  }
 }
 
 export default App;
