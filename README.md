@@ -6,12 +6,12 @@
     <img src="https://img.shields.io/github/last-commit/bwogi/reactjs-portfolio" >   
   </p>
 
-  ## User Story
-* AS AN employer looking for candidates with experience building single-page applications
-* I WANT to view a potential employee's deployed React portfolio of work samples
-* SO THAT I can assess whether they're a good candidate for an open position
-  ## Description
- This is a place to share my projects with fellow developers and collaborate on future projects.
+  ## Purpose
+A portfolio made from scratch with React
+  ## Built with
+ * HTML
+ * CSS
+ * React
 
   ## Project Setup and Use
   * Clone the project source code
@@ -20,13 +20,14 @@
   * Then
   ```$ npm start```
  
-
-
-  ## live site on github
+  ## Website
   https://bwogi.github.io/reactjs-portfolio
   
   ## Project repository 
   https://github.com/bwogi/reactjs-portfolio
+
+  Screenshot
+  ![Screenshot of web page](/src/assets/images/reactjs-portfolio-screenshot.png)
   
   ## License 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
