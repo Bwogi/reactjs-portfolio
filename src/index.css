@@ -16,59 +16,52 @@ code {
 #contact{ 
   text-align: center;
 }
-#portfolio{
-  display:flex;
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
-.portfolio h2 { 
-  text-align: center
+#portfolio h1 { 
+  font-size: 5rem;
 }
+#portfolio ul { 
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+#portfolio ul li { 
+  font-size: 2rem;
+  margin-right: 30px;
+  padding: 7px;
+  
+}
+#portfolio .container{ 
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+#portfolio .container .item{
+  width: 220px;
+  height: 250px;
+  margin-left: 15px;
+}
+
+
+
 #resume{
   text-align: center
 }
 #resume h2{
   text-align: center
 }
-#projects h2{
-  color:#374054;margin-bottom:50px
-}
-.project{
-  position:relative;
-  max-width:900px;
-  margin:0 auto 30px auto;
-  overflow:hidden;
-  background:#fff;
-  border-radius:4px
-}
-.project-image{
-  float:left
-}
-.project-info{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  margin-left:300px;
-  padding:15px
-}
-.project-info h3{
-  font-size:1.5em;
-  font-weight:300;
-  color:#374054;
-  margin:0 0 15px 0
-}
-.project-info p{
-  color:#74808a;
-  margin:0 0 15px 0;
-  font-size:0.9em
-}
-.no-image .project-info{
-  position:relative;
-  margin:0;
-  padding:30px 15px;
-  transform:none
-}
-#more-projects{
-  display:none
-}
+
+
+
+
 #skills{
   padding:50px 15px;
   text-align:center
